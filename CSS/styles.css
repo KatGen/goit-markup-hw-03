@@ -38,15 +38,32 @@ ul {
     padding: 0;
     margin: 0;
     list-style: none;}
-.site-nav a {color: var(--title-text-color);
+.main-nav {
+    display: flex;
+    align-items: stretch;
+}
+.site-nav .link {
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
+color: var(--title-text-color);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
 }
+.site-nav {display: flex;
+margin-left: 93px;}
+.site-nav .item:not(:last-child) {margin-right: 50px;}
+
 .site-nav a:hover, .site-nav a:focus {color: var(--accent-color);}
 .site-nav .link.current {color: var(--accent-color);}
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+.auth-nav .item + .item {margin-left: 50px;}
 .auth-nav a:hover, .auth-nav a:focus {color: var(--accent-color);}
 .nav-contacts {color: var(--primary-text-color);
     font-weight: 500;
@@ -115,18 +132,19 @@ margin-top: 0;
 margin-bottom: 0;
 font-size: 14px;
 line-height: 1.71;
+display: flex;
+align-items: stretch;
 }
 .textbox {
 width: 270px; 
 margin-right: 30px; 
 margin-bottom: 94px;  
-display: inline-block;
 }
 .textbox.last {
 margin-right: 0;  
 }
 .images-list {
-    display: inline-block;
+    display: flex;
 }
 .section-cards h3 {
 font-weight: 500;
@@ -175,6 +193,7 @@ letter-spacing: 0.06em;}
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    margin: auto;
    }    
 h2 {margin-top: 0;}   
 h3 {margin-top: 0;}
