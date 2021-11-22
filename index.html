@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -40,7 +41,7 @@
 
 <section lang="ru" class="section-feature">    
     <div class="container">
-    <h2 class="section-title">Ocoбенности</h2>
+    <h2 class="hidden">Ocoбенности</h2>
     <ul class="section-feature-list">
         <li class="textbox">
             <h3>Внимание к деталям</h3>
@@ -61,8 +62,8 @@
     </ul>
 </div>
 </section>
-<div class="container">
 <section class="section">
+    <div class="container">
     <h2 lang="ru" class="section-title">Чем мы занимаемся</h2>
     <ul class="section-list" >
         <li class="list">
@@ -75,42 +76,51 @@
             <img class="images-list" src="./images/img3.jpg" alt="operation process3" width="370">
         </li>
     </ul>
-</section>     
-</div> 
-<div class="container">
+</div>
+</section>   
 <section lang="ru" class="section">
+<div class="container">
 <h2 class="section-title">Наша команда</h2>
 <ul class="section-cards">
     <li class="cards">
-        <img src="./images/img4.jpg" alt="member of team 1" width="270" height="260">
-        <h3>Игорь Демьяненко</h3> 
-        <p>Product Designer</p>       
+        <img class="img-team" src="./images/img4.jpg" alt="member of team 1" width="270" height="260">
+        <div class="container-cards">
+        <h3 class="cards-title">Игорь Демьяненко</h3> 
+        <p class="cards-desc">Product Designer</p> 
+        </div>     
     </li>
     <li class="cards">
         <img class="img-team" src="./images/img5.jpg" alt="member of team 2" width="270" height="260">
-        <h3>Ольга Репина</h3>
-        <p>Frontend Developer</p>
+        <div class="container-cards">
+        <h3 class="cards-title">Ольга Репина</h3>
+        <p class="cards-desc">Frontend Developer</p>
+    </div>
     </li>
     <li class="cards">
         <img class="img-team" src="./images/img6.jpg" alt="member of team 3" width="270" height="260">
-        <h3>Николай Тарасов</h3>
-        <p>Marketing</p>
+        <div class="container-cards">
+        <h3 class="cards-title">Николай Тарасов</h3>
+        <p class="cards-desc">Marketing</p>
+    </div>
     </li>
     <li class="cards">
         <img class="img-team" src="./images/img7.jpg" alt="member of team 4" width="270" height="260">
-        <h3>Михаил Ермаков</h3>
-        <p>UI Designer</p>
+        <div class="container-cards">
+        <h3 class=cards-title>Михаил Ермаков</h3>
+        <p class="cards-desc">UI Designer</p>
+    </div>
     </li>
 </ul>
-</section>
 </div>
+</section>
 </main>
 <footer class="footer-contacts">
     <div class="container">    
     <a class="footer-logo" href="./index.html" >
         <span>Web</span>Studio
     </a>
-        <ul class="cotacts-list">        
+        <ul class="cotacts-list">
+            <div class="container-contacts">       
         <li lang="ru">      
             <a class="footer-address" href="https://goo.gl/maps/zLNUuuCCSBXQonxw8"
             target="_blank"
@@ -122,6 +132,7 @@
         <li>
             <a class="other-contacts" href="tel:+380991111111">+38 099 111 11 11</a> 
         </li>
+    </div> 
     </ul>
 </div>
 </footer>
